@@ -2,7 +2,7 @@ package ass01;
 
 public abstract class Entry {
 	private String name;
-	private Entry parent; //is it allowed to have variables that are not mentioned in the diagram?
+	private Directory parent;
 	
 	public Entry(Directory parent){
 		this.parent = parent;
@@ -12,7 +12,7 @@ public abstract class Entry {
 		this.parent = parent;
 	}
 	
-	public Entry getParent(){
+	public Directory getParent(){
 		return parent;
 	}
 	
