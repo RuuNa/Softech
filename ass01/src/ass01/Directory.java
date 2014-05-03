@@ -5,7 +5,6 @@ public class Directory extends Entry{
 	public Directory(Directory parent, String name) {
 		super(parent);
 		this.setName(name);
-		//this.name = name <-- warum geht das nicht?
 	}
 	
 	public boolean delete(){
@@ -13,7 +12,7 @@ public class Directory extends Entry{
 	}
 	
 	public boolean deleteRecursively(){
-		super.delete(); //call delete method of the parent directory
+		super.delete(); //call delete method of the parent directory - macht keinen sinn
 		return true;
 	}
 	
