@@ -1,5 +1,6 @@
 package ass01;
 
+import java.util.Iterator;
 import java.util.Vector;
 
 public class Directory extends Entry{
@@ -22,20 +23,24 @@ public class Directory extends Entry{
 		if (this.exists()){
 			this.deleteRecursively();
 		}else{
-			this.delete();
+			//this.delete();
 		}
-		
+			
 		return true; //TODO. OVERWRITES DELETE()
 	}
 	
 	public boolean deleteRecursively(){
-		//LAUF VECTOR AB UND CALL DELETE AUF ELEMENTE
+		Iterator<Entry> it = children.iterator();
+		while(it.hasNext()){
+			Entry e = it.next();
+			e.delete();
+		}
 		return true;
 	}
 	
 	public File createFile(String name){
 		File file = new File(this, name);
-		setChild(file);
+		this.setChild(file);
 		return file;
 	}
 	
