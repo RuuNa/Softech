@@ -6,15 +6,7 @@ public class Directory extends Entry{
 
 	public Directory(Directory parent, String name) {
 		super(parent);
-		this.name = name;
-	}
-	
-	public void setName(String name){
-		this.name = name;
-	}
-	
-	public String getName(){
-		return name;
+		this.setName(name);
 	}
 	
 	public boolean delete(){
