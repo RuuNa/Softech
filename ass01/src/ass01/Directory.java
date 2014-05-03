@@ -2,11 +2,10 @@ package ass01;
 
 public class Directory extends Entry{
 
-	private String name;
-
 	public Directory(Directory parent, String name) {
 		super(parent);
 		this.setName(name);
+		//this.name = name <-- warum geht das nicht?
 	}
 	
 	public boolean delete(){
@@ -27,5 +26,4 @@ public class Directory extends Entry{
 		Directory dir = new Directory(this, name);
 		return dir;
 	}
-
 }
