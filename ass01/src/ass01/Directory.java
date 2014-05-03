@@ -2,9 +2,19 @@ package ass01;
 
 public class Directory extends Entry{
 
+	private String name;
+
 	public Directory(Directory parent, String name) {
 		super(parent);
-		// TODO 
+		this.name = name;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public String getName(){
+		return name;
 	}
 	
 	public boolean delete(){

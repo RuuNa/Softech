@@ -2,22 +2,22 @@ package ass01;
 
 public class Entry {
 	private String name;
-	private Entry parent;
+	private Entry parent; //is it allowed to have variables that are not mentioned in the diagram?
 	
 	public Entry(Directory parent){
-		//TODO
+		this.parent = parent;
 	}
 	
-	public void setParent(Directory thisParent){
-		parent = thisParent;
+	public void setParent(Directory parent){
+		this.parent = parent;
 	}
 	
 	public Entry getParent(){
 		return parent;
 	}
 	
-	public void setName(String thisName){
-		name = thisName;
+	public void setName(String name){
+		this.name = name;
 	}
 	
 	public String getName(){
