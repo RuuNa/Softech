@@ -31,6 +31,4 @@ public class Entry {
 	public boolean exists(){
 		return true;//TODO
 	}
-	
-	//GITTEST
 }
