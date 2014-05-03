@@ -1,6 +1,6 @@
 package ass01;
 
-public class Entry {
+public abstract class Entry {
 	private String name;
 	private Entry parent; //is it allowed to have variables that are not mentioned in the diagram?
 	
