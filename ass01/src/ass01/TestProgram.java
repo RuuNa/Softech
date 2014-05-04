@@ -18,8 +18,6 @@ public class TestProgram {
 		
 		Directory d3 = new Directory((Directory)d2, "bla3");
 		System.out.println(d3.getName());
-		
-		System.out.println(d1.doMagic(d2));
 	}
 
 }
